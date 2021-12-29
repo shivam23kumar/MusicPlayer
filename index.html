@@ -3,41 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Music Player Project</title>
     <script src="https://kit.fontawesome.com/9e4a560991.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <header>
-            <nav class="navigation-bar">
-                <img class="logo" src="pictures/th (1).jpg">
-                <a href="#">Favourites</a>
-                <form class="search-bar" action="">
-                    
-                    <input class="search" type="text" placeholder="Search">
-                    <i class="fas fa-microphone"></i>
-                    <i class="fas fa-bell"></i>
-                    
-                    
-                    
-                </form>
-                <a  href="">
-                    <img class="img-icon" src="pictures/89306618_151497869365464_2554668016325682349_n.jpg" alt="">
-                </a>
-                
-            </nav>
-            
-        
-            
-            
-            
-        </header>
-       
-       
-        
-    </div>
-    
+    <nav class="navigation-bar">
+        <!-- this div contains the logo and title os the page -->
+        <div class="title-combo">
+            <div class="website-logo">
+                <img src="pictures/ninja-logo_5.jpg">
+            </div>
+            <div class="website-name">
+                <h1>
+                    <a href="index.html">
+                        NinjaStudio
+                    </a>
+                </h1>
+                <h4 style="color: magenta;">
+                    <a href="index.html">Online Music Player</a>
+                </h4>
+            </div>
+        </div>
+        <!-- this is the animated favourites text -->
+        <div class="favs">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+        <div class="search-bar">
+            <div>
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+        <!-- this is for notification bell -->
+        <div class="notification-bell">
+            <i class="fas fa-bell"></i>
+
+        </div>
+        <!-- this is for profile picture -->
+        <div class="profile-picture">
+            <img src="pictures/89306618_151497869365464_2554668016325682349_n.jpg">
+        </div>
+    </nav>
+    <!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2-->
+    <!-- I have separated these sections using the aside tag for each section -->
+   
 </body>
 </html>

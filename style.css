@@ -1,59 +1,146 @@
 *{
     background-color: rgb(23, 23, 44);
 }
-
-/* header */
-header{
-    margin-top: -20px;
+body {
+	/* background-image: var(--background-image); */
+	background-image: var(--background-image);
+	
+/* 	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; */
+	margin: 0px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: white;
 }
-
+/* removing all the styles from the links and formatting them white */
+a {
+	text-decoration: none;
+	color: white;
+}
+/* removing margin for all the textual elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0px;
+}
+/* top navigation bar */
 .navigation-bar {
-    width: 100%;  /* i'm assuming full width */
-    height: 60px; /* change it to desired width */
-    
+    margin-top: 10px;
+	height: auto;
+	width: auto;
+	background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-right: 5%;
+	transition: all ease-in-out 1s; /* when the navbar loads, every property transits for 1s */
 }
-.logo {
-    display: inline-block;
-    vertical-align: top;
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    margin-left: 10px;
-    margin-top: 15px; 
-    text-align: center;  
-}
-.navigation-bar  a {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: auto;
-    height: 80px;        /* if you want it to take the full height of the bar */
-    line-height: 80px;    /* if you want it vertically middle of the navbar */
-    color: white;
-    text-decoration: none;
-    margin-left: 100px;
-}
-.search-bar{
-    display: inline-block;
-    margin-left: 600px;
-    margin-top: 35px;
-}
-.search{
-    border-color: white;
-    height: 20px;
-    border-radius: 10px 10px 10px 10px;
-    color: white;
-}
-.fas{
-    color: white;
-}
-.fa-bell{
-    margin-left: 30px;
+/* all the divs inside the navigation bar should be placed side by side*/
+.navigation-bar > div {
+	display: inline-block;
 }
 
-.img-icon{
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    margin-top: 30px;
-   
+/* website logo image */
+.website-logo img {
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	animation-name: rotating;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
 }
+/* website title and general description */
+.title-combo > div {
+	vertical-align: middle;
+	display: inline-block;
+}
+/* animation for favoutites text */
+@keyframes flexible {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotateY(360deg);
+	}
+	75% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+/* search bar */
+.search-bar {
+	width: 20%;
+	position: relative;
+}
+/* changing the default style of the input bar */
+.search-bar input {
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	text-align: center;
+	transition: all ease-in-out 0.1s;
+}
+/* search icon for input bar */
+.search-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* mic icon for input */
+.mic-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* search icon */
+.search-bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.search-bar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* when the user clicks on the search bar, there should be no blue outlining */
+input:focus {
+	outline: none;
+}
+
+/* notification bell image */
+.notification-bell img {
+	width: 30px;
+	height: 30px;
+	animation-name: ringing_bell;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+/* profile picture of the user */
+.profile-picture img {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+}
+/* navigation bar is completed here */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
