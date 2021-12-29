@@ -15,9 +15,10 @@ header{
 .logo {
     display: inline-block;
     vertical-align: top;
-    width: 70px;
+    width: 50px;
     height: 50px;
     margin-right: 20px;
+    margin-left: 10px;
     margin-top: 15px; 
     text-align: center;  
 }
@@ -34,10 +35,9 @@ header{
 .search-bar{
     display: inline-block;
     margin-left: 600px;
-    margin-top: 27px;
+    margin-top: 35px;
 }
 .search{
-    background: url();
     border-color: white;
     height: 20px;
     border-radius: 10px 10px 10px 10px;
@@ -45,4 +45,15 @@ header{
 }
 .fas{
     color: white;
+}
+.fa-bell{
+    margin-left: 30px;
+}
+
+.img-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-top: 30px;
+   
 }
