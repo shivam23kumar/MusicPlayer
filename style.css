@@ -3,39 +3,46 @@
 }
 
 /* header */
-#header{
-    width: auto;
-    height: 100px;
-    background-color: #fff;
-    margin-top: -22px;
-    
-    
-}
-#header img{
-    height: inherit;
-    width: 100px;
-    
+header{
+    margin-top: -20px;
 }
 
-.horizontal-list{
-    list-style: none;
-    padding: 0px;
-    margin-left: 50px;
-    text-align: center;
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 60px; /* change it to desired width */
+    
 }
-.horizontal-list li{
+.logo {
     display: inline-block;
-    margin: 0 8px;
-    
-    
-    
+    vertical-align: top;
+    width: 70px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 15px; 
+    text-align: center;  
 }
-
-.horizontal-list li a{
-    
-    
-    padding: 20px;
-    color:white;
+.navigation-bar  a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: auto;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;    /* if you want it vertically middle of the navbar */
+    color: white;
     text-decoration: none;
-    font-size: 30px;
+    margin-left: 100px;
+}
+.search-bar{
+    display: inline-block;
+    margin-left: 600px;
+    margin-top: 27px;
+}
+.search{
+    background: url();
+    border-color: white;
+    height: 20px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+}
+.fas{
+    color: white;
 }
