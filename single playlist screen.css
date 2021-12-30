@@ -2,7 +2,7 @@
     background-color: rgb(23, 23, 44);
 }
 body {
-	background-image: var(--background-image);
+	
     margin-top: 10px;
 	
 	font-family: "Segoe UI", Arial, sans-serif;
@@ -141,25 +141,12 @@ input:focus {
 	outline: none;
 }
 /* animation for bell image */
-@keyframes ringing_bell {
-	0% {
-		transform: rotate(-15deg);
-	}
-	50% {
-		transform: rotate(15deg);
-	}
-	100% {
-		transform: rotate(-15deg);
-	}
-}
+
 /* notification bell image */
 .notification-bell img {
 	width: 30px;
 	height: 30px;
-	animation-name: ringing_bell;
-	animation-duration: 0.5s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+	
 }
 /* profile picture of the user */
 .profile-picture img {
@@ -225,7 +212,7 @@ main {
 			transparent,
 			rgba(20, 27, 65, 1)
 		),
-		url("pictures/89306618_151497869365464_2554668016325682349_n.jpg");
+		url("pictures/coldplay.jpg");
 	background-size: cover;
 }
 /* right part of the jumbotron */
