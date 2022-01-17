@@ -1,0 +1,21 @@
+/* these are all the media queries for "single playlist screen.html" page with the desktop first approach*/
+@media screen and (max-width: 1200px) {
+  /* animated favourites text will be hidden for this viewport width*/
+  .favs {
+    display: none !important;
+  }
+  /* reduced size of search bar */
+  .search-bar {
+    width: 30%;
+  }
+  input {
+    font-size: 11px !important;
+  }
+  .song-name-main h1 {
+    font-size: 2.4vw;
+  }
+  .desc {
+    font-size: 1.2vw;
+  }
+}
+
